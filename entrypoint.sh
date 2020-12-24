@@ -21,7 +21,8 @@ FILENAME=$(echo "${INPUT_FILE}" | xargs -n 1 basename)
 #then
 #    HEADER_RPM_ARCHITECTURE="X-Bintray-Rpm-Architecture: ${INPUT_RPM_ARCHITECTURE}"
 #fi
-echo ${1}
+echo pwd
+echo ls
 echo "Uploading file"
 curl --silent --show-error --fail --location --request PUT --upload-file "${1}" --user "${INPUT_API_USER}:${INPUT_API_KEY}" "${INPUT_API_URL}/content/${INPUT_REPOSITORY_USER}/${INPUT_REPOSITORY}/${INPUT_PACKAGE}/${INPUT_VERSION}/${INPUT_UPLOAD_PATH}/${FILENAME};publish=${INPUT_PUBLISH}"
 echo "    -> Done."
