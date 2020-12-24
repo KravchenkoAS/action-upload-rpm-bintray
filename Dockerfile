@@ -10,5 +10,6 @@ RUN apk --no-cache add curl
 #RUN apt-get update && apt-get -y install curl git
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
