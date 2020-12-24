@@ -4,7 +4,7 @@ set -euf -o pipefail
 
 FILENAME=$(echo "${INPUT_FILE}" | xargs -n 1 basename)
 
-echo FILENAME
+echo ${FILENAME}
 
 #HEADER_RPM_DISTRIBUTION=""
 #if [ "${INPUT_RPM_DISTRIBUTION}" != "" ]
