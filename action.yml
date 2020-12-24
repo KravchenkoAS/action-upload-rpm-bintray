@@ -1,4 +1,4 @@
-ame: 'action-upload-bintray'
+name: 'action-upload-rpm-bintray'
 description: 'Upload files to JFrog Bintray'
 branding:
   icon: 'upload'
