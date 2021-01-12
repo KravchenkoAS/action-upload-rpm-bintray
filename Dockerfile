@@ -7,7 +7,6 @@ FROM alpine:latest
 #LABEL "com.github.actions.color"="green"
 
 RUN apk --no-cache add curl
-#RUN apt-get update && apt-get -y install curl git
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
